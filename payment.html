@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout</title>
+        <link href="stylesheet/styleCheckout.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1>Checkout</h1>
+        <button style="border: none;" type="button" ><img style="height: 40px;  width: 100%;" src="img/paypal.png"  /></button>
+        <button style="border: none;" type="button" ><img style="height: 40px;  width: 100%;" src="img/apple.png" /></button>
+        <br><br>
+        <h5>Payment Details</h5>
+        <form>
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="inputName" placeholder="Cardholder Name">
+              </div>
+              <br>
+              <div class="col-md-6">
+                <input type="password" class="form-control" id="inputNum" placeholder="Cardnumber">
+            </div>
+            <br>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <select id="inputMonth" class="form-select">
+                    <option selected>Month</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    </select>
+                </div>
+                <br>
+                <div class="col-md-4">
+                <select id="inputYear" class="form-select">
+                    <option selected>Year</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                </select>
+                </div>
+                <br>
+                <div class="col-md-2">
+                <input type="text" class="form-control" id="inputCVV" placeholder="CVV">
+                </div>
+            </div>
+            <br>
+            <div class="col-12" id="submit">
+                <button type=button class="btn btn-light" onClick="parent.location='success.html'">Pay</button>
+            </div>
+          </form>
+    </body>
+</html>
