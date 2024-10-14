@@ -62,25 +62,30 @@
     <iframe src="cart.html" id="shoppingCart" style="width: 400px; height: 1000px; display: none;"></iframe>
 </div>
     <header>
-        <div id="DiscountBar" class="d-flex justify-content-around w-100 h-50 bg-dark">
+        <div id="DiscountBar" class="d-flex justify-content-around w-100 bg-dark" style="height: 50px;">
             <p id="Prices" class="text-light text-center pt-3 ps-3">SGD</p>
-            <p id="Discount" class="text-light pt-3">FREE SHIPPING FOR ALL ITEMS FROM 23 NOV TO 28 NOV! SHOP NOW</p>
+            <p id="Discount" class="text-light pt-3">FREE SHIPPING FOR ALL ITEMS WITH MIN SPEND $65! SHOP NOW</p>
             <p id="Support" class="text-light text-center pt-3 ps-3">Support    </p>
         </div>
-        <div id="NavigationBar" class="d-flex justify-content-between w-100">
-          <img class="w-25 h-25" src="img/logo.png">
-            <div class="d-flex justify-content-start">
-                <a href="checkout.html"  class="p-2 text-decoration-none  fs-1 pt-5" >Check Out</a>
-                <a href="/" class="p-2 text-decoration-none  fs-1 pt-5" >Shop</a>
-                <a href="/" class="p-2 text-decoration-none fs-1 pt-5" >Stories</a>
-                <a href="/" class="p-2 text-decoration-none fs-1 pt-5" >About</a>
-                <a href="/" class="p-2 text-decoration-none fs-1 pt-5" >Search</a>
+        <div id="NavigationBar" class="d-flex justify-content-between align-items-center w-100" style="height: 100px;">
+            <a href="index.html" class="d-flex align-items-center justify-content-center flex-shrink-0" style="flex-basis: 15%; max-width: 15%;">
+                <img src="img/logo.png" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+        
+            <div class="d-flex justify-content-around flex-grow-1" style="flex-basis: 70%;">
+                <a href="checkout.html" class="text-decoration-none fs-3 text-center flex-fill p-2">Check Out</a>
+                <a href="product catalog.html" class="text-decoration-none fs-3 text-center flex-fill p-2">Shop</a>
+                <a href="#" class="text-decoration-none fs-3 text-center flex-fill p-2">Stories</a>
+                <a href="#" class="text-decoration-none fs-3 text-center flex-fill p-2">About</a>
+                <a href="#" class="text-decoration-none fs-3 text-center flex-fill p-2">Search</a>
             </div>
-            <div class="d-flex justify-content-end">
-                <a onclick="gotoCart()" class="p-2 text-decoration-none fs-1 pt-5">Cart</a>
-                <a href="/" class="p-2 text-decoration-none fs-1 pt-5">Login</a>
+        
+            <div class="d-flex justify-content-end flex-shrink-0" style="flex-basis: 15%; max-width: 15%;">
+                <a onclick="gotoCart()" class="text-decoration-none fs-3 text-center p-2 flex-fill">Cart</a>
+                <a href="/" class="text-decoration-none fs-3 text-center p-2 flex-fill">Login</a>
             </div>
         </div>
+        
     </header>
     <main class="wrapper">
         <section class="hero">
